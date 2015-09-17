@@ -1,0 +1,15 @@
+{
+  "name": "node-bp",
+  "version": "0.0.1",
+  "private": true,
+  "repository": "https://github.com/mcoppola/node-bp.git",
+  "dependencies": {
+    "express": "4.x",
+    "less-middleware": "*",
+    "optimist": ">= 0.0.1",
+    "nunjucks": "1.x"
+    },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
