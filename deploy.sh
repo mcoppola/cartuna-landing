@@ -11,5 +11,6 @@ eval `ssh-agent` && ssh-add ~/.ssh/id_rsa
 cd ~/sites/cartuna-landing
 git pull
 forever stop 2
+npm install
 forever start app.js -p 3002
 '
