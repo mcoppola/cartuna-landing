@@ -10,7 +10,6 @@ $(function(){
 	}
 
 	function playVideo() {
-		console.log('hello');
 		$('.ct-video').removeClass('ct-white-out');
 	}
 
