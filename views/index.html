@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
+{% block extraHead %}
+    <script src="js/home.js"></script>
+{% endblock %}
+
 {% block bodyClass %}home-page{% endblock %}
 
 
 {% block main %}
-<div class="ct-video">
+<div class="ct-video ct-white-out">
 	<video autoplay src="videos/fish_hula.mov"></video>
 </div>
 {% endblock %}
