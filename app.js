@@ -3,6 +3,8 @@ var express = require('express'),
     app = express(),
     opts = require(__dirname + '/config/opts.js');
 
+express.static.mime.define({'text/css': ['md']});
+
 // Load express configuration
 require(__dirname + '/config/env.js')(express, app);
 

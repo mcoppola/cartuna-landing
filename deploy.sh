@@ -5,7 +5,7 @@
 
 echo ""
 echo "Deploying cartuna-landing on prod server 104.236.220.177"
-echo "-------------------------------------------"
+echo "--------------------------------------------------------"
 ssh nodeapps@104.236.220.177 '
 eval `ssh-agent` && ssh-add ~/.ssh/id_rsa
 cd ~/sites/cartuna-landing

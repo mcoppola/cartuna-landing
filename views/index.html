@@ -4,11 +4,21 @@
     <script src="js/home.js"></script>
 {% endblock %}
 
-{% block bodyClass %}home-page{% endblock %}
+{% block bodyClass %}ct-landing{% endblock %}
 
 
 {% block main %}
 <div class="ct-video ct-white-out">
-	<video id="fish" autoplay src="videos/hula_fish_lo.mov"></video>
+	<video id="fish" width="100vw" height="100vh" preload autoplay loop src="videos/fish_hula.mov" type="video/quicktime"></video>
+</div>
+<div class="ct-signup">
+{#	#}<div class="ct-signup-button"><div class="ct-signup-peace"></div></div>{#
+	#}<div class="ct-signup-tab">
+		<form class="ct-signup-form" action="">
+			<input class="ct-signup-input" type="text" placeholder="your email">
+			<input type="submit" hidden>
+		</form>{#
+		#}<div class="ct-signup-border"></div>
+	</div>
 </div>
 {% endblock %}
