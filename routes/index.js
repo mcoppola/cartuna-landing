@@ -1,15 +1,14 @@
 module.exports = function (app) {
     app.get('/', index);
-    app.get('/lo', index);
-    app.get('/lores', index);
-    app.get('/hi', hiRes);
-    app.get('/hires', hiRes);
+    app.get('/lo', loRes);
+    app.get('/lores', loRes);
+
 };
 
 var index = function (req, res) {
     res.render('index', { title: 'Cartuna' });
 };
 
-var hiRes = function (req, res) {
-    res.render('hiRes', { title: 'Cartuna' });
+var loRes = function (req, res) {
+    res.render('loRes', { title: 'Cartuna' });
 };
