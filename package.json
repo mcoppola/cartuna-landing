@@ -4,11 +4,14 @@
   "private": true,
   "repository": "https://github.com/mcoppola/node-bp.git",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "4.x",
     "less-middleware": "*",
-    "optimist": ">= 0.0.1",
-    "nunjucks": "1.x"
-    },
+    "nodemailer": "*",
+    "nunjucks": "1.x",
+    "mongoose": "*",
+    "optimist": ">= 0.0.1"
+  },
   "engines": {
     "node": "0.10.x"
   }
