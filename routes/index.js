@@ -4,8 +4,6 @@ module.exports = function (app) {
     app.get('/lores', loRes);
 
 
-
-
     // Email ===================================== //
 
     var Email = app.db.model('Email', { value: String });
@@ -24,7 +22,7 @@ module.exports = function (app) {
 
         var options = {
             from: 'Cartuna Bot <bot@cartunacom>', // sender address
-            to: 'mcoppola832@gmail.com', // list of receivers
+            to: 'mcoppola832@gmail.com, adam@cartuna.com, james@cartuna', // list of receivers
             subject: 'Cartuna Email Sign Up', // Subject line
             text: submition, // plaintext body
             html: '<b>' + submition + '</b>' // html body
@@ -32,22 +30,20 @@ module.exports = function (app) {
 
         var email = new Email({ value: submition });
         return email.save(function (err) {
-          if (err) {
-            console.log('Email DB error', err);
-            res.send(500);
-          }
-
-          return app.mailer.sendMail(options, function(err, info){
-            if(err){
-                console.log(err);
-                res.sendStatus(500);
+            if (err) {
+                console.error('Email DB Error:', err);
+                res.send(500);
             }
-            console.log('Email Sign Up - Message sent: ' + info.response);
-            res.sendStatus(200);
-        });
+            return app.mailer.sendMail(options, function(err, info){
+                if(err){
+                    console.error('Email Notifcation Send Error: ', err);
+                    res.sendStatus(500);
+                }
+                console.log('Email Sign Up - Message sent: ' + info.response);
+                res.sendStatus(200);
+            });
         });
 
-        
 
     });
 
