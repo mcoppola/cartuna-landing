@@ -22,7 +22,7 @@ module.exports = function (app) {
 
         var options = {
             from: 'Cartuna Bot <bot@cartunacom>', // sender address
-            to: 'mcoppola832@gmail.com, adam@cartuna.com, james@cartuna', // list of receivers
+            to: 'mcoppola832@gmail.com, adam@cartuna.com, james@cartuna.com', // list of receivers
             subject: 'Cartuna Email Sign Up', // Subject line
             text: submition, // plaintext body
             html: '<b>' + submition + '</b>' // html body
