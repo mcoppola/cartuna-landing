@@ -12,5 +12,5 @@ cd ~/sites/cartuna-landing
 git pull
 forever stop cartuna-landing
 npm install
-forever --uid "cartuna-landing" start app.js -p 3002
+forever --uid "cartuna-landing" start -a app.js -p 3002
 '
