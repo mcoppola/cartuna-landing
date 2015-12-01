@@ -19,6 +19,6 @@ require(__dirname + '/routes')(app);
 
 // Start the server
 http.createServer(app).listen(process.env.PORT || opts.port, function () {
-    console.log("CARTUNA ~ server listening on port %d in production mode",
+    console.log("\n\nCARTUNA ~ server listening on port %d in production mode",
                 opts.port);
 });
