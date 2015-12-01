@@ -43,6 +43,49 @@ body.ct-landing
 	}
 
 	.transition(opacity 1s ease);
+
+	@media (max-width: 700px) {
+		display: none;
+	}
+}
+
+.ct-git-container
+{
+	display: block;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+.ct-gif
+{
+	display: none;
+	position: absolute;
+	// top: 50%;
+	// bottom: 50%;
+	width: 100vw;
+	height: 100vh;
+
+
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	// height: 100vh; 
+
+	right: 0;
+	left: 0;
+
+	margin-left: 50%;
+
+	.transform(translate3d(-50% ,0% ,0));
+
+	background-image: url('../img/Hula-Fish.gif');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	@media (max-width: 700px) {
+		display: block;
+	}
 }
 
 
