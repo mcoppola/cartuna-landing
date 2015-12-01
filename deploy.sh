@@ -10,7 +10,7 @@ ssh nodeapps@104.236.220.177 '
 eval `ssh-agent` && ssh-add ~/.ssh/id_rsa
 cd ~/sites/cartuna-landing
 git pull
-forever stop 2
+forever stop cartuna-landing
 npm install
-forever start app.js -p 3002
+forever --uid "cartuna-landing" start app.js -p 3002
 '
