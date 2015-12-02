@@ -1,4 +1,4 @@
-var util = require(__dirname + '/../libs/util.js'),
+    var util = require(__dirname + '/../libs/util.js'),
     path = require('path'),
     nunjucks = require('nunjucks');
 
