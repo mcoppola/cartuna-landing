@@ -1,7 +1,10 @@
 body.ct-landing
 {
 	text-align: center;
-	
+
+	@media (max-width: 700px) {
+		background: #fb7491;
+	}
 }
 
 @-webkit-keyframes gradient {
@@ -71,20 +74,26 @@ body.ct-landing
 	width: auto;
 	// height: 100vh; 
 
-	right: 0;
+	// right: 10vw;
 	left: 0;
+	top: 0;
+	// bottom: 10vh;
 
 	margin-left: 50%;
 
 	.transform(translate3d(-50% ,0% ,0));
 
-	background-image: url('../img/SmallerHulaFish.gif');
+	background-image: url('../img/Cartuna-Hula-169.gif');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 
 	@media (max-width: 700px) {
 		display: block;
+	}
+
+	@media (max-width: 550px) {
+		background-image: url('../img/Cartuna-Hula-916.gif');
 	}
 }
 
