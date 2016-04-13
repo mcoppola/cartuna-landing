@@ -17,7 +17,7 @@ body.ct-landing
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@keyframes gradient { 
+@keyframes gradient {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
@@ -25,9 +25,10 @@ body.ct-landing
 
 .ct-video
 {
+	display: none;
 	position: relative;
 	width: 100vw;
-	height: 100vh;	
+	height: 100vh;
 
 	background: #ef5886;
 	background: #fb7491;
@@ -61,7 +62,7 @@ body.ct-landing
 }
 .ct-gif
 {
-	display: none;
+	// display: none;
 	position: absolute;
 	// top: 50%;
 	// bottom: 50%;
@@ -72,7 +73,7 @@ body.ct-landing
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
-	// height: 100vh; 
+	// height: 100vh;
 
 	// right: 10vw;
 	left: 0;
@@ -83,14 +84,14 @@ body.ct-landing
 
 	.transform(translate3d(-50% ,0% ,0));
 
-	background-image: url('../img/Cartuna-Hula-169.gif');
+	background-image: url('../img/Cartuna-Final-Landing.gif');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 
-	@media (max-width: 700px) {
-		display: block;
-	}
+	// @media (max-width: 700px) {
+	// 	display: block;
+	// }
 
 	@media (max-width: 550px) {
 		background-image: url('../img/Cartuna-Hula-916.gif');
@@ -98,7 +99,7 @@ body.ct-landing
 }
 
 
-video#fish 
+video#fish
 {
 	position: fixed;
 	// top: 10vh;
@@ -111,7 +112,7 @@ video#fish
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
-	// height: 100vh; 
+	// height: 100vh;
 
 	right: 0;
 	left: 0;
@@ -125,7 +126,7 @@ video#fish
 .ct-signup
 {
 	position: absolute;
-	
+
 	top: 0;
 	width: 100%;
 
@@ -172,7 +173,7 @@ video#fish
 		background-size: 100% 100%;
 	}
 
-	&:hover 
+	&:hover
 	{
 		cursor: pointer;
 		background: #3061aa;
@@ -180,7 +181,7 @@ video#fish
 
 	.transition(background .25s ease);
 }
-form 
+form
 {
 	position: relative;
 	display: inline-block;
@@ -208,7 +209,7 @@ form
 }
 .ct-signup-input
 {
-	position: relative;	
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
 
@@ -218,7 +219,7 @@ form
 	width: 194px;
 	padding: 4px 0;
 	line-height: 36px;
-	
+
 	text-align: center;
 
 	background-color: transparent;
@@ -234,7 +235,7 @@ form
 	color: #fff;
 
 	z-index: 1;
-	
+
 	.walsheim;
 
 	&:focus
@@ -265,4 +266,3 @@ form
 	-moz-animation: gradient 15s ease infinite;
 	animation: gradient 15s ease infinite;
 }
-
