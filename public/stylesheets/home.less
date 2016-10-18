@@ -62,10 +62,7 @@ body.ct-landing
 }
 .ct-gif
 {
-	// display: none;
 	position: absolute;
-	// top: 50%;
-	// bottom: 50%;
 	width: 100vw;
 	height: 100vh;
 
@@ -73,28 +70,64 @@ body.ct-landing
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
-	// height: 100vh;
 
-	// right: 10vw;
 	left: 0;
 	top: 0;
-	// bottom: 10vh;
 
 	margin-left: 50%;
 
 	.transform(translate3d(-50% ,0% ,0));
 
-	background-image: url('../img/Cartuna-Final-Landing.gif');
+	// background-image: url('../img/Cartuna-Final-Landing.gif');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 
-	// @media (max-width: 700px) {
-	// 	display: block;
-	// }
-
 	@media (max-width: 550px) {
 		background-image: url('../img/Cartuna-Hula-916.gif');
+
+	}
+	
+	
+	video 
+	{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		// Cover
+		width: 100vw;
+		height: 56.25vw;
+		min-height: 100vh;
+		min-width: 177.77vh;
+	}
+}
+
+.ct-gif-container 
+{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	min-width: 100%;
+	min-height: 100%;
+
+	video
+	{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		// Cover
+		width: 100vw;
+		height: 56.25vw;
+		min-height: 100vh;
+		min-width: 177.77vh;
+		
+		@media (max-width: 550px) {
+			display: none;
+		}
 	}
 }
 
